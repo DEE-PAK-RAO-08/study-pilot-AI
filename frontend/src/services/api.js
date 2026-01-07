@@ -3,7 +3,7 @@
  * Handles all backend communication with authentication
  */
 
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';
 
 // Get stored auth data
 const getAuthData = () => {
