@@ -1,0 +1,232 @@
+.dashboard {
+    padding-top: var(--spacing-lg);
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-2xl);
+    gap: var(--spacing-xl);
+}
+
+.header-content h1 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.header-content p {
+    font-size: var(--font-size-lg);
+}
+
+.header-stats {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.stat-item {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-md) var(--spacing-lg);
+    text-align: center;
+    backdrop-filter: blur(20px);
+}
+
+.stat-value {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    background: var(--color-accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: block;
+}
+
+.stat-label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Course Grid */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+}
+
+.course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-md);
+}
+
+.course-icon {
+    font-size: 2.5rem;
+}
+
+.course-badge {
+    font-size: var(--font-size-xs);
+}
+
+.badge-complete {
+    background: rgba(99, 102, 241, 0.2);
+    color: var(--color-accent-primary);
+}
+
+.badge-high {
+    background: rgba(16, 185, 129, 0.2);
+    color: var(--color-success);
+}
+
+.badge-medium {
+    background: rgba(245, 158, 11, 0.2);
+    color: var(--color-warning);
+}
+
+.badge-low {
+    background: rgba(239, 68, 68, 0.2);
+    color: var(--color-error);
+}
+
+.course-name {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-xs);
+}
+
+.course-code {
+    font-size: var(--font-size-sm);
+    color: var(--color-accent-primary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+}
+
+.course-description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    flex: 1;
+    margin-bottom: var(--spacing-md);
+}
+
+.course-progress {
+    margin-bottom: var(--spacing-md);
+}
+
+.course-actions {
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-border);
+}
+
+.action-hint {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    transition: color var(--transition-fast);
+}
+
+.course-card:hover .action-hint {
+    color: var(--color-accent-primary);
+}
+
+/* Loading & Error States */
+.loading-state,
+.error-state,
+.empty-state {
+    text-align: center;
+    padding: var(--spacing-2xl);
+}
+
+.loading-spinner {
+    width: 48px;
+    height: 48px;
+    border: 3px solid var(--color-border);
+    border-top-color: var(--color-accent-primary);
+    border-radius: 50%;
+    margin: 0 auto var(--spacing-lg);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.error-icon,
+.empty-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: var(--spacing-md);
+}
+
+.error-state h3,
+.empty-state h3 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.error-state p,
+.empty-state p {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Quick Actions */
+.quick-actions {
+    margin-top: var(--spacing-2xl);
+}
+
+.quick-actions h2 {
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-xl);
+}
+
+.actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.action-card {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    text-decoration: none;
+    color: inherit;
+}
+
+.action-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.action-content h4 {
+    margin-bottom: var(--spacing-xs);
+}
+
+.action-content p {
+    font-size: var(--font-size-sm);
+}
+
+@media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+    }
+
+    .header-stats {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}

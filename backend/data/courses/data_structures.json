@@ -1,0 +1,262 @@
+{
+  "id": 1,
+  "name": "Data Structures and Algorithms",
+  "code": "data_structures",
+  "description": "Comprehensive course covering fundamental data structures and algorithms essential for software engineering. Topics include arrays, linked lists, trees, graphs, sorting, searching, and dynamic programming.",
+  "topics": [
+    {
+      "id": 1,
+      "name": "Arrays and Strings",
+      "description": "Linear data structures, array operations, string manipulation",
+      "week": 1,
+      "difficulty": 0.3,
+      "subtopics": ["Static Arrays", "Dynamic Arrays", "2D Arrays", "String Operations"],
+      "key_concepts": ["Time Complexity", "Space Complexity", "Indexing"]
+    },
+    {
+      "id": 2,
+      "name": "Linked Lists",
+      "description": "Singly linked, doubly linked, circular linked lists",
+      "week": 2,
+      "difficulty": 0.4,
+      "subtopics": ["Singly Linked List", "Doubly Linked List", "Circular List"],
+      "key_concepts": ["Pointers", "Node Structure", "Traversal"]
+    },
+    {
+      "id": 3,
+      "name": "Stacks and Queues",
+      "description": "LIFO and FIFO data structures, applications",
+      "week": 3,
+      "difficulty": 0.35,
+      "subtopics": ["Stack Implementation", "Queue Implementation", "Priority Queue", "Deque"],
+      "key_concepts": ["Push/Pop", "Enqueue/Dequeue", "LIFO", "FIFO"]
+    },
+    {
+      "id": 4,
+      "name": "Trees and Binary Trees",
+      "description": "Tree structures, binary trees, traversals",
+      "week": 4,
+      "difficulty": 0.5,
+      "subtopics": ["Binary Trees", "Tree Traversal", "BST", "AVL Trees"],
+      "key_concepts": ["Root", "Parent/Child", "Inorder", "Preorder", "Postorder"]
+    },
+    {
+      "id": 5,
+      "name": "Heaps",
+      "description": "Binary heaps, heap operations, priority queues",
+      "week": 5,
+      "difficulty": 0.55,
+      "subtopics": ["Min Heap", "Max Heap", "Heapify", "Heap Sort"],
+      "key_concepts": ["Complete Binary Tree", "Heap Property", "Extract Min/Max"]
+    },
+    {
+      "id": 6,
+      "name": "Hashing",
+      "description": "Hash tables, collision resolution, hash functions",
+      "week": 6,
+      "difficulty": 0.5,
+      "subtopics": ["Hash Functions", "Collision Handling", "Open Addressing", "Chaining"],
+      "key_concepts": ["Load Factor", "Rehashing", "O(1) Average"]
+    },
+    {
+      "id": 7,
+      "name": "Graphs",
+      "description": "Graph representations, traversals, basic algorithms",
+      "week": 7,
+      "difficulty": 0.6,
+      "subtopics": ["Adjacency Matrix", "Adjacency List", "BFS", "DFS"],
+      "key_concepts": ["Vertices", "Edges", "Directed/Undirected", "Connected Components"]
+    },
+    {
+      "id": 8,
+      "name": "Sorting Algorithms",
+      "description": "Comparison and non-comparison based sorting",
+      "week": 8,
+      "difficulty": 0.5,
+      "subtopics": ["Merge Sort", "Quick Sort", "Counting Sort", "Radix Sort"],
+      "key_concepts": ["Divide and Conquer", "Stability", "In-place"]
+    },
+    {
+      "id": 9,
+      "name": "Searching Algorithms",
+      "description": "Linear search, binary search, search in data structures",
+      "week": 9,
+      "difficulty": 0.4,
+      "subtopics": ["Linear Search", "Binary Search", "Interpolation Search"],
+      "key_concepts": ["Sorted Arrays", "Search Space", "Logarithmic Time"]
+    },
+    {
+      "id": 10,
+      "name": "Dynamic Programming",
+      "description": "Optimal substructure, memoization, tabulation",
+      "week": 10,
+      "difficulty": 0.7,
+      "subtopics": ["Memoization", "Tabulation", "Classic DP Problems"],
+      "key_concepts": ["Overlapping Subproblems", "State Transition", "Base Cases"]
+    },
+    {
+      "id": 11,
+      "name": "Greedy Algorithms",
+      "description": "Greedy choice property, classic greedy problems",
+      "week": 11,
+      "difficulty": 0.55,
+      "subtopics": ["Activity Selection", "Huffman Coding", "Minimum Spanning Tree"],
+      "key_concepts": ["Local Optimum", "Greedy Choice", "Proof of Correctness"]
+    },
+    {
+      "id": 12,
+      "name": "Advanced Topics",
+      "description": "Tries, segment trees, advanced graph algorithms",
+      "week": 12,
+      "difficulty": 0.75,
+      "subtopics": ["Tries", "Segment Trees", "Dijkstra", "Bellman-Ford"],
+      "key_concepts": ["Shortest Path", "Range Queries", "Prefix Trees"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ds_q1",
+      "topic_id": 1,
+      "topic_name": "Arrays and Strings",
+      "question_text": "What is the time complexity of accessing an element in an array by index?",
+      "question_type": "mcq",
+      "options": ["O(1)", "O(n)", "O(log n)", "O(n²)"],
+      "correct_answer": "O(1)",
+      "explanation": "Array access by index is O(1) because arrays provide direct memory access through index calculation.",
+      "difficulty": "easy",
+      "source_citation": "Data Structures Textbook, Chapter 1"
+    },
+    {
+      "id": "ds_q2",
+      "topic_id": 1,
+      "topic_name": "Arrays and Strings",
+      "question_text": "What is the time complexity of inserting an element at the beginning of a dynamic array?",
+      "question_type": "mcq",
+      "options": ["O(1)", "O(n)", "O(log n)", "O(n²)"],
+      "correct_answer": "O(n)",
+      "explanation": "Inserting at the beginning requires shifting all existing elements, making it O(n).",
+      "difficulty": "medium",
+      "source_citation": "Data Structures Textbook, Chapter 1"
+    },
+    {
+      "id": "ds_q3",
+      "topic_id": 2,
+      "topic_name": "Linked Lists",
+      "question_text": "What is the main advantage of a linked list over an array?",
+      "question_type": "mcq",
+      "options": ["Faster access by index", "Dynamic size with efficient insertions", "Less memory usage", "Cache efficiency"],
+      "correct_answer": "Dynamic size with efficient insertions",
+      "explanation": "Linked lists allow O(1) insertion/deletion at known positions without shifting elements.",
+      "difficulty": "easy",
+      "source_citation": "Data Structures Textbook, Chapter 2"
+    },
+    {
+      "id": "ds_q4",
+      "topic_id": 2,
+      "topic_name": "Linked Lists",
+      "question_text": "In a doubly linked list, how do you delete a node with only a pointer to that node?",
+      "question_type": "mcq",
+      "options": ["Cannot be done", "Update prev and next pointers", "Copy next node's data and delete next", "Traverse from head"],
+      "correct_answer": "Update prev and next pointers",
+      "explanation": "In a doubly linked list, each node has prev and next pointers, allowing direct deletion.",
+      "difficulty": "medium",
+      "source_citation": "Data Structures Textbook, Chapter 2"
+    },
+    {
+      "id": "ds_q5",
+      "topic_id": 3,
+      "topic_name": "Stacks and Queues",
+      "question_text": "Which data structure is used to implement function call recursion?",
+      "question_type": "mcq",
+      "options": ["Queue", "Stack", "Array", "Linked List"],
+      "correct_answer": "Stack",
+      "explanation": "The call stack uses LIFO (Last In First Out) to manage function calls and returns.",
+      "difficulty": "easy",
+      "source_citation": "Data Structures Textbook, Chapter 3"
+    },
+    {
+      "id": "ds_q6",
+      "topic_id": 4,
+      "topic_name": "Trees and Binary Trees",
+      "question_text": "What is the maximum number of nodes at level k in a binary tree?",
+      "question_type": "mcq",
+      "options": ["k", "2k", "2^k", "2^(k+1) - 1"],
+      "correct_answer": "2^k",
+      "explanation": "At each level k (starting from 0), a binary tree can have at most 2^k nodes.",
+      "difficulty": "medium",
+      "source_citation": "Data Structures Textbook, Chapter 4"
+    },
+    {
+      "id": "ds_q7",
+      "topic_id": 4,
+      "topic_name": "Trees and Binary Trees",
+      "question_text": "In a BST, which traversal gives elements in sorted order?",
+      "question_type": "mcq",
+      "options": ["Preorder", "Inorder", "Postorder", "Level order"],
+      "correct_answer": "Inorder",
+      "explanation": "Inorder traversal of BST visits nodes in ascending order: left, root, right.",
+      "difficulty": "easy",
+      "source_citation": "Data Structures Textbook, Chapter 4"
+    },
+    {
+      "id": "ds_q8",
+      "topic_id": 5,
+      "topic_name": "Heaps",
+      "question_text": "What is the time complexity of building a heap from an unsorted array?",
+      "question_type": "mcq",
+      "options": ["O(n)", "O(n log n)", "O(log n)", "O(n²)"],
+      "correct_answer": "O(n)",
+      "explanation": "Using the heapify approach (bottom-up), building a heap is O(n), not O(n log n).",
+      "difficulty": "hard",
+      "source_citation": "Data Structures Textbook, Chapter 5"
+    },
+    {
+      "id": "ds_q9",
+      "topic_id": 6,
+      "topic_name": "Hashing",
+      "question_text": "What is the average time complexity of hash table lookup?",
+      "question_type": "mcq",
+      "options": ["O(1)", "O(n)", "O(log n)", "O(n²)"],
+      "correct_answer": "O(1)",
+      "explanation": "With a good hash function and low load factor, hash table operations are O(1) on average.",
+      "difficulty": "easy",
+      "source_citation": "Data Structures Textbook, Chapter 6"
+    },
+    {
+      "id": "ds_q10",
+      "topic_id": 7,
+      "topic_name": "Graphs",
+      "question_text": "Which algorithm is used for finding shortest path in an unweighted graph?",
+      "question_type": "mcq",
+      "options": ["DFS", "BFS", "Dijkstra", "Bellman-Ford"],
+      "correct_answer": "BFS",
+      "explanation": "BFS explores nodes level by level, finding shortest path in unweighted graphs.",
+      "difficulty": "medium",
+      "source_citation": "Data Structures Textbook, Chapter 7"
+    },
+    {
+      "id": "ds_q11",
+      "topic_id": 8,
+      "topic_name": "Sorting Algorithms",
+      "question_text": "Which sorting algorithm has the best worst-case time complexity?",
+      "question_type": "mcq",
+      "options": ["Quick Sort", "Merge Sort", "Bubble Sort", "Selection Sort"],
+      "correct_answer": "Merge Sort",
+      "explanation": "Merge Sort guarantees O(n log n) in all cases, while Quick Sort can degrade to O(n²).",
+      "difficulty": "medium",
+      "source_citation": "Data Structures Textbook, Chapter 8"
+    },
+    {
+      "id": "ds_q12",
+      "topic_id": 10,
+      "topic_name": "Dynamic Programming",
+      "question_text": "What are the two key properties of dynamic programming problems?",
+      "question_type": "mcq",
+      "options": ["Greedy choice and local optimum", "Optimal substructure and overlapping subproblems", "Divide and conquer", "Brute force and memoization"],
+      "correct_answer": "Optimal substructure and overlapping subproblems",
+      "explanation": "DP problems have optimal substructure (optimal solutions from subproblems) and overlapping subproblems (same subproblems solved multiple times).",
+      "difficulty": "medium",
+      "source_citation": "Data Structures Textbook, Chapter 10"
+    }
+  ]
+}

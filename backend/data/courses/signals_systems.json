@@ -1,0 +1,335 @@
+{
+    "id": 2,
+    "name": "Signals and Systems",
+    "code": "signals_systems",
+    "description": "Fundamental course on continuous and discrete-time signals and systems, covering signal analysis, Fourier transforms, Laplace transforms, and system characterization.",
+    "topics": [
+        {
+            "id": 13,
+            "name": "Signal Classification",
+            "description": "Types of signals: continuous/discrete, periodic/aperiodic, energy/power",
+            "week": 1,
+            "difficulty": 0.3,
+            "subtopics": [
+                "Continuous vs Discrete",
+                "Periodic Signals",
+                "Energy and Power Signals"
+            ],
+            "key_concepts": [
+                "Time Domain",
+                "Amplitude",
+                "Frequency"
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Elementary Signals",
+            "description": "Unit step, impulse, ramp, exponential, and sinusoidal signals",
+            "week": 2,
+            "difficulty": 0.35,
+            "subtopics": [
+                "Unit Step",
+                "Unit Impulse",
+                "Exponential Signals",
+                "Sinusoids"
+            ],
+            "key_concepts": [
+                "Delta Function",
+                "Step Response",
+                "Complex Exponential"
+            ]
+        },
+        {
+            "id": 15,
+            "name": "System Properties",
+            "description": "Linearity, time-invariance, causality, stability",
+            "week": 3,
+            "difficulty": 0.45,
+            "subtopics": [
+                "LTI Systems",
+                "BIBO Stability",
+                "Causality",
+                "Memory"
+            ],
+            "key_concepts": [
+                "Superposition",
+                "Homogeneity",
+                "Time Shift"
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Convolution",
+            "description": "Continuous and discrete convolution, graphical methods",
+            "week": 4,
+            "difficulty": 0.55,
+            "subtopics": [
+                "Continuous Convolution",
+                "Discrete Convolution",
+                "Graphical Method"
+            ],
+            "key_concepts": [
+                "Impulse Response",
+                "Output Calculation",
+                "Flip and Slide"
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Fourier Series",
+            "description": "Representation of periodic signals as sum of sinusoids",
+            "week": 5,
+            "difficulty": 0.6,
+            "subtopics": [
+                "Trigonometric Form",
+                "Exponential Form",
+                "Parseval's Theorem"
+            ],
+            "key_concepts": [
+                "Harmonics",
+                "Coefficients",
+                "Frequency Spectrum"
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Continuous Fourier Transform",
+            "description": "Frequency domain analysis of aperiodic signals",
+            "week": 6,
+            "difficulty": 0.65,
+            "subtopics": [
+                "CFT Definition",
+                "Properties",
+                "Transform Pairs"
+            ],
+            "key_concepts": [
+                "Spectrum",
+                "Duality",
+                "Convolution Theorem"
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Laplace Transform",
+            "description": "Complex frequency domain analysis, transfer functions",
+            "week": 7,
+            "difficulty": 0.7,
+            "subtopics": [
+                "Bilateral/Unilateral",
+                "ROC",
+                "Inverse Transform"
+            ],
+            "key_concepts": [
+                "S-domain",
+                "Poles and Zeros",
+                "Transfer Function"
+            ]
+        },
+        {
+            "id": 20,
+            "name": "Z-Transform",
+            "description": "Discrete-time system analysis in z-domain",
+            "week": 8,
+            "difficulty": 0.7,
+            "subtopics": [
+                "Z-Transform Definition",
+                "ROC",
+                "Inverse Z-Transform"
+            ],
+            "key_concepts": [
+                "Unit Circle",
+                "Poles/Zeros",
+                "Stability"
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Filter Design Basics",
+            "description": "Low-pass, high-pass, band-pass filter concepts",
+            "week": 9,
+            "difficulty": 0.55,
+            "subtopics": [
+                "Ideal Filters",
+                "Practical Filters",
+                "Frequency Response"
+            ],
+            "key_concepts": [
+                "Cutoff Frequency",
+                "Passband",
+                "Stopband"
+            ]
+        },
+        {
+            "id": 22,
+            "name": "Sampling and Reconstruction",
+            "description": "Nyquist theorem, aliasing, practical sampling",
+            "week": 10,
+            "difficulty": 0.6,
+            "subtopics": [
+                "Nyquist Rate",
+                "Aliasing",
+                "Reconstruction"
+            ],
+            "key_concepts": [
+                "Sampling Frequency",
+                "Anti-aliasing",
+                "DAC/ADC"
+            ]
+        }
+    ],
+    "questions": [
+        {
+            "id": "ss_q1",
+            "topic_id": 13,
+            "topic_name": "Signal Classification",
+            "question_text": "A signal x(t) = cos(2πt) is classified as:",
+            "question_type": "mcq",
+            "options": [
+                "Energy signal",
+                "Power signal",
+                "Neither",
+                "Both"
+            ],
+            "correct_answer": "Power signal",
+            "explanation": "Periodic signals like sinusoids have infinite energy but finite average power, making them power signals.",
+            "difficulty": "easy",
+            "source_citation": "Signals and Systems, Chapter 1"
+        },
+        {
+            "id": "ss_q2",
+            "topic_id": 14,
+            "topic_name": "Elementary Signals",
+            "question_text": "What is the integral of the unit impulse function δ(t)?",
+            "question_type": "mcq",
+            "options": [
+                "0",
+                "1",
+                "δ(t)",
+                "u(t)"
+            ],
+            "correct_answer": "u(t)",
+            "explanation": "The integral of the impulse function δ(t) from -∞ to t gives the unit step function u(t).",
+            "difficulty": "medium",
+            "source_citation": "Signals and Systems, Chapter 2"
+        },
+        {
+            "id": "ss_q3",
+            "topic_id": 15,
+            "topic_name": "System Properties",
+            "question_text": "A system is LTI if it satisfies:",
+            "question_type": "mcq",
+            "options": [
+                "Only linearity",
+                "Only time-invariance",
+                "Both linearity and time-invariance",
+                "Causality and stability"
+            ],
+            "correct_answer": "Both linearity and time-invariance",
+            "explanation": "LTI stands for Linear Time-Invariant, requiring both properties.",
+            "difficulty": "easy",
+            "source_citation": "Signals and Systems, Chapter 3"
+        },
+        {
+            "id": "ss_q4",
+            "topic_id": 16,
+            "topic_name": "Convolution",
+            "question_text": "The output of an LTI system is given by:",
+            "question_type": "mcq",
+            "options": [
+                "x(t) + h(t)",
+                "x(t) × h(t)",
+                "x(t) * h(t) (convolution)",
+                "dx/dt"
+            ],
+            "correct_answer": "x(t) * h(t) (convolution)",
+            "explanation": "For LTI systems, output y(t) = x(t) * h(t), the convolution of input and impulse response.",
+            "difficulty": "medium",
+            "source_citation": "Signals and Systems, Chapter 4"
+        },
+        {
+            "id": "ss_q5",
+            "topic_id": 17,
+            "topic_name": "Fourier Series",
+            "question_text": "Fourier series can only represent:",
+            "question_type": "mcq",
+            "options": [
+                "Any signal",
+                "Periodic signals",
+                "Aperiodic signals",
+                "Digital signals"
+            ],
+            "correct_answer": "Periodic signals",
+            "explanation": "Fourier series represents periodic signals as a sum of harmonically related sinusoids.",
+            "difficulty": "easy",
+            "source_citation": "Signals and Systems, Chapter 5"
+        },
+        {
+            "id": "ss_q6",
+            "topic_id": 18,
+            "topic_name": "Continuous Fourier Transform",
+            "question_text": "The Fourier transform of a time-shifted signal x(t-t₀) is:",
+            "question_type": "mcq",
+            "options": [
+                "X(ω)e^(jωt₀)",
+                "X(ω)e^(-jωt₀)",
+                "X(ω-ω₀)",
+                "X(ω)/t₀"
+            ],
+            "correct_answer": "X(ω)e^(-jωt₀)",
+            "explanation": "Time shift in time domain causes phase shift in frequency domain: multiplication by e^(-jωt₀).",
+            "difficulty": "hard",
+            "source_citation": "Signals and Systems, Chapter 6"
+        },
+        {
+            "id": "ss_q7",
+            "topic_id": 19,
+            "topic_name": "Laplace Transform",
+            "question_text": "The Laplace transform of e^(-at)u(t) where a > 0 is:",
+            "question_type": "mcq",
+            "options": [
+                "1/(s-a)",
+                "1/(s+a)",
+                "s/(s+a)",
+                "a/(s+a)"
+            ],
+            "correct_answer": "1/(s+a)",
+            "explanation": "L{e^(-at)u(t)} = 1/(s+a) with ROC: Re(s) > -a.",
+            "difficulty": "medium",
+            "source_citation": "Signals and Systems, Chapter 7"
+        },
+        {
+            "id": "ss_q8",
+            "topic_id": 20,
+            "topic_name": "Z-Transform",
+            "question_text": "For a discrete system to be stable, all poles must be:",
+            "question_type": "mcq",
+            "options": [
+                "On the unit circle",
+                "Inside the unit circle",
+                "Outside the unit circle",
+                "At the origin"
+            ],
+            "correct_answer": "Inside the unit circle",
+            "explanation": "For BIBO stability of causal systems, all poles must have magnitude less than 1 (inside unit circle).",
+            "difficulty": "medium",
+            "source_citation": "Signals and Systems, Chapter 8"
+        },
+        {
+            "id": "ss_q9",
+            "topic_id": 22,
+            "topic_name": "Sampling and Reconstruction",
+            "question_text": "According to Nyquist theorem, the sampling frequency must be:",
+            "question_type": "mcq",
+            "options": [
+                "Equal to max frequency",
+                "At least twice the max frequency",
+                "Half the max frequency",
+                "Any value"
+            ],
+            "correct_answer": "At least twice the max frequency",
+            "explanation": "Nyquist theorem: fs ≥ 2fmax to avoid aliasing and allow perfect reconstruction.",
+            "difficulty": "easy",
+            "source_citation": "Signals and Systems, Chapter 10"
+        }
+    ]
+}

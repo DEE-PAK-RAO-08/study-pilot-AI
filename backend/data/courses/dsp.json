@@ -1,0 +1,396 @@
+{
+    "id": 4,
+    "name": "Digital Signal Processing",
+    "code": "dsp",
+    "description": "Advanced course on digital signal processing covering discrete-time signals, DFT/FFT, digital filter design, and practical DSP applications.",
+    "topics": [
+        {
+            "id": 35,
+            "name": "Discrete-Time Signals",
+            "description": "Sequences, operations, basic discrete signals",
+            "week": 1,
+            "difficulty": 0.35,
+            "subtopics": [
+                "Sequences",
+                "Unit Sample",
+                "Unit Step",
+                "Exponential Sequences"
+            ],
+            "key_concepts": [
+                "n-domain",
+                "Sample",
+                "Causality"
+            ]
+        },
+        {
+            "id": 36,
+            "name": "Discrete-Time Systems",
+            "description": "LTI systems, difference equations, stability",
+            "week": 2,
+            "difficulty": 0.45,
+            "subtopics": [
+                "LTI Systems",
+                "Difference Equations",
+                "Impulse Response",
+                "Stability"
+            ],
+            "key_concepts": [
+                "Convolution Sum",
+                "BIBO Stability",
+                "Causality"
+            ]
+        },
+        {
+            "id": 37,
+            "name": "Sampling and Quantization",
+            "description": "A/D conversion, sampling theorem, aliasing",
+            "week": 3,
+            "difficulty": 0.5,
+            "subtopics": [
+                "Sampling Process",
+                "Quantization",
+                "ADC",
+                "DAC"
+            ],
+            "key_concepts": [
+                "Nyquist Rate",
+                "Aliasing",
+                "Quantization Error"
+            ]
+        },
+        {
+            "id": 38,
+            "name": "Discrete Fourier Transform",
+            "description": "DFT definition, properties, circular convolution",
+            "week": 4,
+            "difficulty": 0.6,
+            "subtopics": [
+                "DFT Definition",
+                "IDFT",
+                "Properties",
+                "Circular Convolution"
+            ],
+            "key_concepts": [
+                "Frequency Bins",
+                "Resolution",
+                "Leakage"
+            ]
+        },
+        {
+            "id": 39,
+            "name": "Fast Fourier Transform",
+            "description": "FFT algorithms, computational efficiency",
+            "week": 5,
+            "difficulty": 0.6,
+            "subtopics": [
+                "Radix-2 FFT",
+                "Decimation in Time",
+                "Decimation in Frequency",
+                "Complexity"
+            ],
+            "key_concepts": [
+                "O(N log N)",
+                "Butterfly",
+                "Twiddle Factor"
+            ]
+        },
+        {
+            "id": 40,
+            "name": "FIR Filter Design",
+            "description": "Finite impulse response filters, design methods",
+            "week": 6,
+            "difficulty": 0.55,
+            "subtopics": [
+                "Window Method",
+                "Parks-McClellan",
+                "Linear Phase",
+                "Filter Specifications"
+            ],
+            "key_concepts": [
+                "Filter Order",
+                "Passband Ripple",
+                "Stopband Attenuation"
+            ]
+        },
+        {
+            "id": 41,
+            "name": "IIR Filter Design",
+            "description": "Infinite impulse response filters, bilinear transform",
+            "week": 7,
+            "difficulty": 0.65,
+            "subtopics": [
+                "Butterworth",
+                "Chebyshev",
+                "Bilinear Transform",
+                "Impulse Invariance"
+            ],
+            "key_concepts": [
+                "Analog Prototype",
+                "Frequency Warping",
+                "Stability"
+            ]
+        },
+        {
+            "id": 42,
+            "name": "Filter Implementation",
+            "description": "Direct form, cascade, parallel structures",
+            "week": 8,
+            "difficulty": 0.55,
+            "subtopics": [
+                "Direct Form I/II",
+                "Cascade Form",
+                "Parallel Form",
+                "Transposed Form"
+            ],
+            "key_concepts": [
+                "Coefficient Quantization",
+                "Finite Precision",
+                "Scaling"
+            ]
+        },
+        {
+            "id": 43,
+            "name": "Spectral Analysis",
+            "description": "Periodogram, windowing, spectral estimation",
+            "week": 9,
+            "difficulty": 0.6,
+            "subtopics": [
+                "Periodogram",
+                "Welch Method",
+                "Window Functions",
+                "Resolution"
+            ],
+            "key_concepts": [
+                "Power Spectrum",
+                "Variance",
+                "Spectral Leakage"
+            ]
+        },
+        {
+            "id": 44,
+            "name": "Multirate Signal Processing",
+            "description": "Decimation, interpolation, filter banks",
+            "week": 10,
+            "difficulty": 0.7,
+            "subtopics": [
+                "Downsampling",
+                "Upsampling",
+                "Polyphase",
+                "Filter Banks"
+            ],
+            "key_concepts": [
+                "Noble Identity",
+                "Anti-aliasing",
+                "Interpolation Filter"
+            ]
+        },
+        {
+            "id": 45,
+            "name": "Adaptive Filters",
+            "description": "LMS algorithm, applications in echo cancellation",
+            "week": 11,
+            "difficulty": 0.7,
+            "subtopics": [
+                "LMS Algorithm",
+                "NLMS",
+                "RLS",
+                "Echo Cancellation"
+            ],
+            "key_concepts": [
+                "Adaptation",
+                "Convergence",
+                "Learning Rate"
+            ]
+        },
+        {
+            "id": 46,
+            "name": "DSP Applications",
+            "description": "Audio processing, image processing, communications",
+            "week": 12,
+            "difficulty": 0.5,
+            "subtopics": [
+                "Audio Effects",
+                "Compression",
+                "Modulation",
+                "Filtering"
+            ],
+            "key_concepts": [
+                "Real-time Processing",
+                "Fixed-point",
+                "Implementation"
+            ]
+        }
+    ],
+    "questions": [
+        {
+            "id": "dsp_q1",
+            "topic_id": 35,
+            "topic_name": "Discrete-Time Signals",
+            "question_text": "The unit sample sequence δ[n] is equal to:",
+            "question_type": "mcq",
+            "options": [
+                "1 for all n",
+                "1 for n≥0, 0 otherwise",
+                "1 for n=0, 0 otherwise",
+                "0 for all n"
+            ],
+            "correct_answer": "1 for n=0, 0 otherwise",
+            "explanation": "The unit sample (impulse) δ[n] = 1 only when n = 0, and 0 everywhere else.",
+            "difficulty": "easy",
+            "source_citation": "DSP Textbook, Chapter 1"
+        },
+        {
+            "id": "dsp_q2",
+            "topic_id": 36,
+            "topic_name": "Discrete-Time Systems",
+            "question_text": "A discrete LTI system is completely characterized by its:",
+            "question_type": "mcq",
+            "options": [
+                "Transfer function only",
+                "Impulse response",
+                "Step response",
+                "Frequency response only"
+            ],
+            "correct_answer": "Impulse response",
+            "explanation": "The impulse response h[n] completely characterizes an LTI system; output is convolution of input with h[n].",
+            "difficulty": "medium",
+            "source_citation": "DSP Textbook, Chapter 2"
+        },
+        {
+            "id": "dsp_q3",
+            "topic_id": 37,
+            "topic_name": "Sampling and Quantization",
+            "question_text": "If a signal has maximum frequency 4 kHz, minimum sampling rate to avoid aliasing is:",
+            "question_type": "mcq",
+            "options": [
+                "4 kHz",
+                "8 kHz",
+                "2 kHz",
+                "16 kHz"
+            ],
+            "correct_answer": "8 kHz",
+            "explanation": "Nyquist rate = 2 × fmax = 2 × 4 kHz = 8 kHz minimum sampling rate.",
+            "difficulty": "easy",
+            "source_citation": "DSP Textbook, Chapter 3"
+        },
+        {
+            "id": "dsp_q4",
+            "topic_id": 38,
+            "topic_name": "Discrete Fourier Transform",
+            "question_text": "The DFT of an N-point sequence produces:",
+            "question_type": "mcq",
+            "options": [
+                "N/2 frequency samples",
+                "N frequency samples",
+                "2N frequency samples",
+                "Infinite samples"
+            ],
+            "correct_answer": "N frequency samples",
+            "explanation": "The N-point DFT produces exactly N complex frequency samples (indices 0 to N-1).",
+            "difficulty": "easy",
+            "source_citation": "DSP Textbook, Chapter 4"
+        },
+        {
+            "id": "dsp_q5",
+            "topic_id": 39,
+            "topic_name": "Fast Fourier Transform",
+            "question_text": "The computational complexity of radix-2 FFT compared to direct DFT is:",
+            "question_type": "mcq",
+            "options": [
+                "O(N) vs O(N²)",
+                "O(N log N) vs O(N²)",
+                "O(N²) vs O(N³)",
+                "Same complexity"
+            ],
+            "correct_answer": "O(N log N) vs O(N²)",
+            "explanation": "FFT reduces DFT complexity from O(N²) to O(N log N), a significant speedup for large N.",
+            "difficulty": "medium",
+            "source_citation": "DSP Textbook, Chapter 5"
+        },
+        {
+            "id": "dsp_q6",
+            "topic_id": 40,
+            "topic_name": "FIR Filter Design",
+            "question_text": "FIR filters compared to IIR filters are:",
+            "question_type": "mcq",
+            "options": [
+                "Always unstable",
+                "Can have exactly linear phase",
+                "More efficient (fewer coefficients)",
+                "Recursive"
+            ],
+            "correct_answer": "Can have exactly linear phase",
+            "explanation": "FIR filters can achieve exactly linear phase (no phase distortion), which IIR filters cannot.",
+            "difficulty": "medium",
+            "source_citation": "DSP Textbook, Chapter 6"
+        },
+        {
+            "id": "dsp_q7",
+            "topic_id": 41,
+            "topic_name": "IIR Filter Design",
+            "question_text": "The bilinear transform maps the s-plane imaginary axis to:",
+            "question_type": "mcq",
+            "options": [
+                "z-plane imaginary axis",
+                "z-plane real axis",
+                "z-plane unit circle",
+                "Origin"
+            ],
+            "correct_answer": "z-plane unit circle",
+            "explanation": "The bilinear transform maps jω axis (s-plane) to the unit circle (z-plane), preserving stability.",
+            "difficulty": "hard",
+            "source_citation": "DSP Textbook, Chapter 7"
+        },
+        {
+            "id": "dsp_q8",
+            "topic_id": 42,
+            "topic_name": "Filter Implementation",
+            "question_text": "Direct Form II uses fewer delay elements because it:",
+            "question_type": "mcq",
+            "options": [
+                "Has no feedback",
+                "Shares delays between numerator and denominator",
+                "Uses parallel structure",
+                "Is always stable"
+            ],
+            "correct_answer": "Shares delays between numerator and denominator",
+            "explanation": "Direct Form II combines the delays of FIR and IIR parts, requiring only max(M,N) delays instead of M+N.",
+            "difficulty": "medium",
+            "source_citation": "DSP Textbook, Chapter 8"
+        },
+        {
+            "id": "dsp_q9",
+            "topic_id": 44,
+            "topic_name": "Multirate Signal Processing",
+            "question_text": "Decimation by factor M requires:",
+            "question_type": "mcq",
+            "options": [
+                "Lowpass filtering after downsampling",
+                "Lowpass filtering before downsampling",
+                "Highpass filtering",
+                "No filtering"
+            ],
+            "correct_answer": "Lowpass filtering before downsampling",
+            "explanation": "Anti-aliasing lowpass filter must precede downsampling to remove frequencies above fs/(2M).",
+            "difficulty": "medium",
+            "source_citation": "DSP Textbook, Chapter 10"
+        },
+        {
+            "id": "dsp_q10",
+            "topic_id": 45,
+            "topic_name": "Adaptive Filters",
+            "question_text": "The step size μ in LMS algorithm controls:",
+            "question_type": "mcq",
+            "options": [
+                "Filter order",
+                "Convergence speed vs stability tradeoff",
+                "Number of taps",
+                "Output amplitude"
+            ],
+            "correct_answer": "Convergence speed vs stability tradeoff",
+            "explanation": "Larger μ gives faster convergence but may cause instability; smaller μ is stable but slow.",
+            "difficulty": "hard",
+            "source_citation": "DSP Textbook, Chapter 11"
+        }
+    ]
+}

@@ -1,0 +1,377 @@
+{
+    "id": 3,
+    "name": "Thermodynamics",
+    "code": "thermodynamics",
+    "description": "Engineering thermodynamics covering laws of thermodynamics, thermodynamic cycles, entropy, and applications to heat engines and refrigeration systems.",
+    "topics": [
+        {
+            "id": 23,
+            "name": "Basic Concepts and Definitions",
+            "description": "Systems, properties, processes, and equilibrium",
+            "week": 1,
+            "difficulty": 0.3,
+            "subtopics": [
+                "Open/Closed Systems",
+                "Intensive/Extensive Properties",
+                "State and Process"
+            ],
+            "key_concepts": [
+                "Thermodynamic System",
+                "Surroundings",
+                "Boundary"
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Work and Heat",
+            "description": "Energy transfer mechanisms, path functions",
+            "week": 2,
+            "difficulty": 0.4,
+            "subtopics": [
+                "Mechanical Work",
+                "PdV Work",
+                "Heat Transfer",
+                "Sign Convention"
+            ],
+            "key_concepts": [
+                "Path Function",
+                "Boundary Work",
+                "Heat Flow"
+            ]
+        },
+        {
+            "id": 25,
+            "name": "First Law of Thermodynamics",
+            "description": "Energy conservation, internal energy, enthalpy",
+            "week": 3,
+            "difficulty": 0.45,
+            "subtopics": [
+                "Energy Balance",
+                "Internal Energy",
+                "Enthalpy",
+                "Specific Heats"
+            ],
+            "key_concepts": [
+                "Conservation of Energy",
+                "ΔU = Q - W",
+                "Steady State"
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Properties of Pure Substances",
+            "description": "Phase diagrams, steam tables, ideal gas",
+            "week": 4,
+            "difficulty": 0.5,
+            "subtopics": [
+                "Phase Diagrams",
+                "Steam Tables",
+                "Ideal Gas Law",
+                "Equations of State"
+            ],
+            "key_concepts": [
+                "Saturation",
+                "Quality",
+                "Superheated",
+                "Compressed Liquid"
+            ]
+        },
+        {
+            "id": 27,
+            "name": "Second Law of Thermodynamics",
+            "description": "Entropy, irreversibility, heat engines",
+            "week": 5,
+            "difficulty": 0.6,
+            "subtopics": [
+                "Kelvin-Planck Statement",
+                "Clausius Statement",
+                "Heat Engine Efficiency"
+            ],
+            "key_concepts": [
+                "Irreversibility",
+                "Direction of Process",
+                "Thermal Reservoirs"
+            ]
+        },
+        {
+            "id": 28,
+            "name": "Entropy",
+            "description": "Entropy generation, entropy balance, T-s diagrams",
+            "week": 6,
+            "difficulty": 0.65,
+            "subtopics": [
+                "Entropy Definition",
+                "Entropy Balance",
+                "Isentropic Process",
+                "Entropy Generation"
+            ],
+            "key_concepts": [
+                "dS = δQ/T",
+                "Clausius Inequality",
+                "Reversible Process"
+            ]
+        },
+        {
+            "id": 29,
+            "name": "Carnot Cycle",
+            "description": "Ideal cycle, maximum efficiency, Carnot principles",
+            "week": 7,
+            "difficulty": 0.55,
+            "subtopics": [
+                "Carnot Engine",
+                "Reversed Carnot",
+                "Carnot Efficiency",
+                "Carnot Principles"
+            ],
+            "key_concepts": [
+                "Maximum Efficiency",
+                "η = 1 - TL/TH",
+                "Reversible Cycle"
+            ]
+        },
+        {
+            "id": 30,
+            "name": "Gas Power Cycles",
+            "description": "Otto, Diesel, Brayton cycles",
+            "week": 8,
+            "difficulty": 0.6,
+            "subtopics": [
+                "Otto Cycle",
+                "Diesel Cycle",
+                "Brayton Cycle",
+                "Cycle Analysis"
+            ],
+            "key_concepts": [
+                "Compression Ratio",
+                "Cut-off Ratio",
+                "Back Work Ratio"
+            ]
+        },
+        {
+            "id": 31,
+            "name": "Vapor Power Cycles",
+            "description": "Rankine cycle, regeneration, reheat",
+            "week": 9,
+            "difficulty": 0.6,
+            "subtopics": [
+                "Rankine Cycle",
+                "Superheating",
+                "Regeneration",
+                "Reheat"
+            ],
+            "key_concepts": [
+                "Steam Turbine",
+                "Condenser",
+                "Feed Water Heater"
+            ]
+        },
+        {
+            "id": 32,
+            "name": "Refrigeration Cycles",
+            "description": "Vapor compression, gas refrigeration, COP",
+            "week": 10,
+            "difficulty": 0.55,
+            "subtopics": [
+                "Vapor Compression",
+                "Gas Refrigeration",
+                "Heat Pump",
+                "COP"
+            ],
+            "key_concepts": [
+                "Refrigerant",
+                "Evaporator",
+                "Compressor",
+                "Throttling"
+            ]
+        },
+        {
+            "id": 33,
+            "name": "Thermodynamic Relations",
+            "description": "Maxwell relations, Gibbs equations",
+            "week": 11,
+            "difficulty": 0.7,
+            "subtopics": [
+                "Maxwell Relations",
+                "Clapeyron Equation",
+                "Joule-Thomson Effect"
+            ],
+            "key_concepts": [
+                "Partial Derivatives",
+                "Thermodynamic Potentials"
+            ]
+        },
+        {
+            "id": 34,
+            "name": "Chemical Thermodynamics",
+            "description": "Gibbs free energy, equilibrium, combustion",
+            "week": 12,
+            "difficulty": 0.7,
+            "subtopics": [
+                "Gibbs Free Energy",
+                "Chemical Equilibrium",
+                "Combustion",
+                "Enthalpy of Formation"
+            ],
+            "key_concepts": [
+                "ΔG = ΔH - TΔS",
+                "Equilibrium Constant",
+                "Adiabatic Flame Temperature"
+            ]
+        }
+    ],
+    "questions": [
+        {
+            "id": "thermo_q1",
+            "topic_id": 23,
+            "topic_name": "Basic Concepts and Definitions",
+            "question_text": "A system that exchanges both mass and energy with surroundings is called:",
+            "question_type": "mcq",
+            "options": [
+                "Closed system",
+                "Open system",
+                "Isolated system",
+                "Adiabatic system"
+            ],
+            "correct_answer": "Open system",
+            "explanation": "Open systems (control volumes) allow both mass and energy to cross the boundary.",
+            "difficulty": "easy",
+            "source_citation": "Thermodynamics Textbook, Chapter 1"
+        },
+        {
+            "id": "thermo_q2",
+            "topic_id": 24,
+            "topic_name": "Work and Heat",
+            "question_text": "Work done in a constant pressure process is:",
+            "question_type": "mcq",
+            "options": [
+                "W = PΔV",
+                "W = VΔP",
+                "W = ∫VdP",
+                "W = 0"
+            ],
+            "correct_answer": "W = PΔV",
+            "explanation": "At constant pressure, boundary work W = P(V2 - V1) = PΔV.",
+            "difficulty": "medium",
+            "source_citation": "Thermodynamics Textbook, Chapter 2"
+        },
+        {
+            "id": "thermo_q3",
+            "topic_id": 25,
+            "topic_name": "First Law of Thermodynamics",
+            "question_text": "For a closed system undergoing a cycle, the first law states:",
+            "question_type": "mcq",
+            "options": [
+                "ΔU = Q",
+                "ΔU = W",
+                "Q = W",
+                "ΔU = Q - W"
+            ],
+            "correct_answer": "Q = W",
+            "explanation": "For a complete cycle, ΔU = 0, so Q_net = W_net from the first law.",
+            "difficulty": "medium",
+            "source_citation": "Thermodynamics Textbook, Chapter 3"
+        },
+        {
+            "id": "thermo_q4",
+            "topic_id": 26,
+            "topic_name": "Properties of Pure Substances",
+            "question_text": "The quality of a two-phase liquid-vapor mixture represents:",
+            "question_type": "mcq",
+            "options": [
+                "Pressure ratio",
+                "Temperature ratio",
+                "Mass fraction of vapor",
+                "Volume fraction of liquid"
+            ],
+            "correct_answer": "Mass fraction of vapor",
+            "explanation": "Quality x = m_vapor / m_total, representing the mass fraction of vapor in the mixture.",
+            "difficulty": "medium",
+            "source_citation": "Thermodynamics Textbook, Chapter 4"
+        },
+        {
+            "id": "thermo_q5",
+            "topic_id": 27,
+            "topic_name": "Second Law of Thermodynamics",
+            "question_text": "The Kelvin-Planck statement says it is impossible to:",
+            "question_type": "mcq",
+            "options": [
+                "Transfer heat from cold to hot body",
+                "Convert heat completely to work in a cycle",
+                "Create energy",
+                "Have 100% efficient refrigerator"
+            ],
+            "correct_answer": "Convert heat completely to work in a cycle",
+            "explanation": "No heat engine operating in a cycle can convert all heat input to work (some must be rejected).",
+            "difficulty": "medium",
+            "source_citation": "Thermodynamics Textbook, Chapter 5"
+        },
+        {
+            "id": "thermo_q6",
+            "topic_id": 28,
+            "topic_name": "Entropy",
+            "question_text": "For a reversible adiabatic process, entropy change is:",
+            "question_type": "mcq",
+            "options": [
+                "Positive",
+                "Negative",
+                "Zero",
+                "Undefined"
+            ],
+            "correct_answer": "Zero",
+            "explanation": "Reversible adiabatic = isentropic (constant entropy). ΔS = 0.",
+            "difficulty": "easy",
+            "source_citation": "Thermodynamics Textbook, Chapter 6"
+        },
+        {
+            "id": "thermo_q7",
+            "topic_id": 29,
+            "topic_name": "Carnot Cycle",
+            "question_text": "A Carnot engine operates between 500K and 300K. Its efficiency is:",
+            "question_type": "mcq",
+            "options": [
+                "20%",
+                "40%",
+                "60%",
+                "80%"
+            ],
+            "correct_answer": "40%",
+            "explanation": "Carnot efficiency η = 1 - TL/TH = 1 - 300/500 = 0.4 = 40%.",
+            "difficulty": "medium",
+            "source_citation": "Thermodynamics Textbook, Chapter 7"
+        },
+        {
+            "id": "thermo_q8",
+            "topic_id": 30,
+            "topic_name": "Gas Power Cycles",
+            "question_text": "In an Otto cycle, heat is added during:",
+            "question_type": "mcq",
+            "options": [
+                "Constant pressure process",
+                "Constant volume process",
+                "Isentropic process",
+                "Isothermal process"
+            ],
+            "correct_answer": "Constant volume process",
+            "explanation": "Otto cycle (spark ignition engine) has constant volume heat addition (combustion).",
+            "difficulty": "easy",
+            "source_citation": "Thermodynamics Textbook, Chapter 8"
+        },
+        {
+            "id": "thermo_q9",
+            "topic_id": 32,
+            "topic_name": "Refrigeration Cycles",
+            "question_text": "The COP of a refrigerator is defined as:",
+            "question_type": "mcq",
+            "options": [
+                "W_net/Q_L",
+                "Q_L/W_net",
+                "Q_H/W_net",
+                "W_net/Q_H"
+            ],
+            "correct_answer": "Q_L/W_net",
+            "explanation": "COP_R = Desired effect / Work input = Q_L / W_net (heat removed from cold space per unit work).",
+            "difficulty": "medium",
+            "source_citation": "Thermodynamics Textbook, Chapter 10"
+        }
+    ]
+}
