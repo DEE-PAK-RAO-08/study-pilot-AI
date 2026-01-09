@@ -2,10 +2,13 @@ import os
 import urllib.request
 import urllib.error
 import json
-from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
+# Try to load dotenv, but it's optional (env vars can be set directly on Render)
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # dotenv not installed, assume env vars are set directly
 
 def get_openai_answer(query: str, context_text: str = "", history: list = None) -> dict:
     """
