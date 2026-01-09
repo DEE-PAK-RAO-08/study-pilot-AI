@@ -1,37 +1,14 @@
-# Study Pilot AI - Backend Dependencies
-# Production-ready for Render FREE TIER deployment (512MB RAM limit)
+# Study Pilot AI - Minimal Dependencies for Render FREE Tier
+# 512MB RAM limit - NO heavy AI libraries
 
-# Web Framework
-flask>=3.0.0
-flask-cors>=4.0.0
+flask
+flask-cors
+gunicorn
+numpy
+scikit-learn
+requests
+werkzeug
 
-# Production Server
-gunicorn>=21.2.0
-
-# Database
-# sqlite3 is built-in
-
-# Document Parsing (lightweight)
-PyPDF2>=3.0.1
-python-pptx>=0.6.23
-
-# Utilities (lightweight)
-numpy>=1.24.0
-scikit-learn>=1.3.0
-werkzeug>=3.0.1
-requests>=2.31.0
-
-# =====================================================
-# HEAVY ML LIBRARIES - REMOVED FOR FREE TIER
-# =====================================================
-# These require 2GB+ RAM and CUDA, not compatible with Render Free
-# Uncomment only if you upgrade to a paid plan with more RAM
-# -----------------------------------------------------
-# sentence-transformers>=2.2.2
-# faiss-cpu>=1.9.0
-# torch>=2.0.0
-# transformers>=4.30.0
-# =====================================================
-
-# NOTE: The app has fallback embeddings that work without
-# sentence-transformers. RAG will use simple hash-based embeddings.
+# Document parsing (lightweight)
+PyPDF2
+python-pptx
