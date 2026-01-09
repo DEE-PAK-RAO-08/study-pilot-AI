@@ -5,11 +5,22 @@
 import sys
 import os
 
-# Add the backend directory to the Python path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'backend'))
+# Get the absolute path to the backend directory
+backend_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'backend')
 
-# Import the Flask app from the backend
-from backend.app import app
+# Add the backend directory to sys.path so all imports work correctly
+if backend_path not in sys.path:
+    sys.path.insert(0, backend_path)
+
+# Change the current working directory to backend for relative path imports
+os.chdir(backend_path)
+
+# Now import the Flask app
+# We need to import after changing the path and cwd
+from app import app as flask_app
+
+# Export as 'app' for gunicorn
+app = flask_app
 
 # This allows gunicorn to find the app with: gunicorn app:app
 if __name__ == '__main__':
