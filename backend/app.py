@@ -26,7 +26,17 @@ from rag import VectorRetriever, AnswerGenerator, DocumentIngester
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5173", "http://localhost:3000", "http://127.0.0.1:5173"])
+
+# CORS Configuration - Add your production domains here
+CORS(app, origins=[
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "http://127.0.0.1:5173",
+    "http://127.0.0.1:3000",
+    # Production domains (update with your actual Vercel URL)
+    "https://*.vercel.app",  # Allows all Vercel preview deployments
+    os.environ.get("FRONTEND_URL", "")  # Custom frontend URL from env
+], supports_credentials=True)
 
 # Initialize components
 DATA_PATH = Path(__file__).parent / "data"

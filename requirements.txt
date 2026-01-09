@@ -1,24 +1,24 @@
 # Study Pilot AI - Backend Dependencies
-# Offline-first, CPU-only compatible
+# Production-ready for Render deployment
 
 # Web Framework
-flask==3.0.0
-flask-cors==4.0.0
+flask>=3.0.0
+flask-cors>=4.0.0
 
-# Server (Production)
-gunicorn==21.2.0
+# Production Server
+gunicorn>=21.2.0
 
 # Database
 # sqlite3 is built-in
 
 # RAG Pipeline
-sentence-transformers==2.2.2
-faiss-cpu==1.7.4
+sentence-transformers>=2.2.2
+faiss-cpu>=1.9.0  # Updated: Render requires newer versions
 
 # Document Parsing
-PyPDF2==3.0.1
-python-pptx==0.6.23
+PyPDF2>=3.0.1
+python-pptx>=0.6.23
 
 # Utilities
-numpy==1.24.3
-werkzeug==3.0.1
+numpy>=1.24.0
+werkzeug>=3.0.1
