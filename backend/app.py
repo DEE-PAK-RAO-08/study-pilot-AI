@@ -33,7 +33,8 @@ CORS(app, origins=[
     "http://localhost:3000",
     "http://127.0.0.1:5173",
     "http://127.0.0.1:3000",
-    # Production domains (update with your actual Vercel URL)
+    # Production domains
+    "https://study-pilot-ai-liart.vercel.app",  # Your Vercel frontend
     "https://*.vercel.app",  # Allows all Vercel preview deployments
     os.environ.get("FRONTEND_URL", "")  # Custom frontend URL from env
 ], supports_credentials=True)
