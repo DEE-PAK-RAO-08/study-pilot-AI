@@ -539,6 +539,26 @@ def ingest_materials():
     })
 
 
+# ============ Root Route ============
+
+@app.route('/', methods=['GET'])
+def index():
+    """Root route - API information."""
+    return jsonify({
+        'name': 'Study Pilot AI API',
+        'version': '1.0.0',
+        'status': 'running',
+        'endpoints': {
+            'health': '/api/health',
+            'auth': '/api/auth/login, /api/auth/register, /api/auth/demo',
+            'courses': '/api/courses',
+            'query': '/api/query',
+            'quiz': '/api/quiz/<course_id>'
+        },
+        'docs': 'https://github.com/DEE-PAK-RAO-08/study-pilot-AI'
+    })
+
+
 # ============ Health Check ============
 
 @app.route('/api/health', methods=['GET'])
